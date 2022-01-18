@@ -36,6 +36,15 @@ const Form = () => {
               Submit
             </button>
           </div>
+          <p className="text-md">
+            Made by:
+            <a
+              href="https://github.com/code-withAshish"
+              className="font-bold hover:text-green-700"
+            >
+              Ashish
+            </a>
+          </p>
         </div>
       </form>
     </div>
