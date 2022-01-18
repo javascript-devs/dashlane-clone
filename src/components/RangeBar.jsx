@@ -2,7 +2,7 @@ import { useState } from "react";
 const RangeBar = () => {
   const [range, setRange] = useState(null);
   return (
-    <div className="flex flex-col space-x-2">
+    <div>
       <input
         name="length"
         type="range"
