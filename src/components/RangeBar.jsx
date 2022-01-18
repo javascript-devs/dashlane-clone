@@ -11,7 +11,7 @@ const RangeBar = () => {
         max={100}
         step={1}
         onChange={(e) => setRange(e.target.value)}
-        className="range range-primary w-[100vh]"
+        className="range range-primary w-[100%]"
       />
       <label className="text-xl " htmlFor="range">
         Length: {range || 8}

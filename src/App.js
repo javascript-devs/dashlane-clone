@@ -6,7 +6,7 @@ const App = () => {
       <div className="bg-green-400 h-screen  flex items-center justify-center">
         <div
           className=" p-4 rounded-lg bg-white w-auto
-         md:min-w-[800px] h-auto shadow-xl"
+          h-auto shadow-xl"
         >
           <Form />
         </div>

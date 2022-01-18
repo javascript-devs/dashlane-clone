@@ -17,7 +17,7 @@ const Form = () => {
     <div className="flex">
       <form onSubmit={handleSubmit} className="flex flex-col space-y-8">
         <input
-          className=" w-full border-0 border-b-2 border-green-500
+          className=" w-auto border-0 border-b-2 border-green-500
            focus:border-green-700 ease-in-out duration-200 transition-all 
            outline-none py-2 text-4xl text-green-600 "
           type="text"
@@ -26,7 +26,7 @@ const Form = () => {
         />
         <div className="flex flex-col">
           <RangeBar />
-          <div className="flex items-center justify-evenly flex-row space-x-3">
+          <div className="flex items-center justify-evenly flex-col lg:flex-row lg:space-y-3 space-x-3">
             <ToggleSwitch key="1" name="uppercase" text="Uppercase letters" />
             <ToggleSwitch key="2" name="numbers" text="Numbers" />
             <ToggleSwitch key="3" name="symbols" text="Symbols" />
