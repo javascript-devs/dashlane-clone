@@ -5,7 +5,7 @@ const ToggleSwitch = (props) => {
       <input
         name={props.name}
         type="checkbox"
-        className="toggle toggle-accent checked:bg-green-500"
+        className="toggle toggle-accent transition-all ease-in-out duration-200 checked:bg-green-500"
       />
     </div>
   );

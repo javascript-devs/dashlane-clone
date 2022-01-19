@@ -5,6 +5,7 @@ import apiData from "./ApiHandler";
 const Form = () => {
   const [res, setRes] = useState("");
   const handleSubmit = (e) => {
+    setRes("fetching...");
     e.preventDefault();
     const data = new FormData(e.target);
     var object = {};
