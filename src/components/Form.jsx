@@ -4,6 +4,10 @@ import { useState } from "react";
 import apiData from "./ApiHandler";
 const Form = () => {
   const [res, setRes] = useState("");
+  const reset = document.getElementById("reset");
+  reset.addEventListener("click", () => {
+    setRes("");
+  });
   const handleSubmit = (e) => {
     setRes("fetching...");
     e.preventDefault();
@@ -20,6 +24,7 @@ const Form = () => {
     <div className="flex w-auto">
       <form onSubmit={handleSubmit} className="flex flex-col space-y-8">
         <input
+          id="pwd"
           className=" w-auto border-0 border-b-2 border-green-500
            focus:border-green-700 ease-in-out duration-200 transition-all 
            outline-none py-2 text-xl text-green-600 "
@@ -38,7 +43,7 @@ const Form = () => {
             <button type="submit" className="btn btn-primary">
               Submit
             </button>
-            <button type="reset" className="btn btn-warning ml-4">
+            <button id="reset" type="reset" className="btn btn-warning ml-4">
               Reset
             </button>
           </div>
