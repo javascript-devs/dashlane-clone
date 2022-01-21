@@ -4,10 +4,7 @@ import { useState } from "react";
 import apiData from "./ApiHandler";
 const Form = () => {
   const [res, setRes] = useState("");
-  const reset = document.getElementById("reset");
-  reset.addEventListener("click", () => {
-    setRes("");
-  });
+
   const handleSubmit = (e) => {
     setRes("fetching...");
     e.preventDefault();
