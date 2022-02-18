@@ -6,7 +6,13 @@ const apiData = async (opt) => {
   const symbols = opt.hasOwnProperty("symbols") ? "true" : "false";
   const length = opt.length;
   const response = await axios.get(
-    `https://express-pwd-api.herokuapp.com/pwd?uppercase=${uppercase}&numbers=${numbers}&symbol=${symbols}&len=${length}`
+    `https://express-pwd-api.herokuapp.com/pwd?uppercase=${uppercase}&numbers=${numbers}&symbol=${symbols}&len=${length}`,
+    {
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    }
   );
   return response.data.result;
 };
